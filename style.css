@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/*
+body{
+   margin-left: 0;
+   
+}
+*/
+
+
+
+/*navigation styling begins*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    
+}
+
+
+
+
+.nav a{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.rightnav a{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.midnav{
+    margin-right: -120px;
+}
+
+.midnav a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    
+}
+
+/*navigation styling ends*/
+
+
+
+/*LANDING PAGE BEGINS*/
+
+
+
+.intro{
+    background-image: url("images/introimage3.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 94vh;
+    display: flex;
+    
+}
+
+.introtext{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.falsediv{
+    flex: 1;
+}
+
+
+.introbutton{
+    background-color: black;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    align-self: center;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    align-self: center;
+    font-weight: bold;
+
+}
+
+.intro-heading{
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    font-size:8vh ;
+   
+}
+
+/*category(men, women, accessories) styling begins*/
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+   
+   
+    
+
+}
+
+
+.men{
+    background-image: url("images/Men.jpg");
+   
+}
+
+.women{
+    background-image: url("images/Women.jpg");
+    
+}
+
+.accessory{
+    background-image: url("images/backpack.jpg");
+     
+}
+
+
+.category-common{
+    height: 85vh;
+    width: 33.3%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+   
+}
+
+
+.category-heading{
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+
+}
+
+.category-button{
+    background-color: transparent;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    align-self: center;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid white;
+   
+}
+
+.category-button:hover{
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+
+/*category(men, women, accessories) styling ends*/
+
+/*featured products styling begins*/
+/*NOTE: This code is also used for styling the SHOP PAGE*/
+
+.featured-heading{
+    color: black;
+    font-family: "Nunito", Arial, Helvetica, sans-serif; 
+    text-align: center;
+    font-weight: normal;
+    padding: 5vh 0;
+
+}
+
+.product-container{
+    padding-bottom: 10vh;
+}
+
+.product-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-card{
+    padding: 1px;
+}
+
+.product-view{
+    height: 55vh;
+    width: 55vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-image{
+    height: inherit;
+    width: inherit;
+
+}
+
+
+.product-card:hover{
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 0;
+}
+
+
+.product-card:hover .product-image{
+    display: none;
+}
+
+.row2{
+    margin-top: 6vh ;
+    padding-bottom: 6vh;
+}
+
+.product-info{
+    font-family: "Nunito", Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+
+.product-price{
+    margin-top: -10px;
+}
+
+.product-name{
+    font-weight: bold;
+}
+
+.shop-link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-link-button a{
+    background-color: black;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    
+
+}
+
+.shop-link-button a:hover{
+    background-color: white;
+    color: black;
+    padding: 8px 23px 8px 23px;
+    border: 2px solid black;
+
+}
+
+.hoodie{
+    background-image: url("images/hoodie 1.png");
+}
+
+.tshirt{
+    background-image: url("images/tshirt 2.png");
+}
+
+.zipper{
+    background-image: url("images/zipper 2.png");
+}
+
+.sweatshirt{
+    background-image: url("images/Sweatshirt 2.png");
+}
+
+.crop{
+    background-image: url("images/crop 1.png");
+}
+
+.bag{
+    background-image: url("images/bag\ 2.png");
+}
+
+/*featured products styling ends*/
+
+/*LANDING PAGE ENDS*/
+
+
+
+
+
+/*CART PAGE BEGINS*/
+
+
+.cart-empty{
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.cart-empty h1{
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    margin-top: -100px;
+    
+
+}
+
+.cart-empty a{
+    background-color: black;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.cart-empty a:hover{
+    background-color: white;
+    color: black;
+    padding: 8px 23px 8px 23px;
+    border: 2px solid black;
+
+}
+
+/*CART PAGE ENDS*/
+
+/*FOOTER styiling begins*/
+
+footer{
+    background-color: rgb(242, 235, 235);
+    padding-bottom:20px ;
+}
+
+.footer{
+   
+    
+    display:flex;
+    justify-content: space-between;
+    padding: 0 15px 20px 15px;
+}
+
+
+.footer-content{
+    width: 33.3%;
+    
+}
+
+.footer-left a{
+    text-decoration: none;
+    color: black;
+   
+}
+.twitter-icon, .fb-icon{
+    margin-left: 15px;
+}
+ 
+
+.footer-headings{
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.footer p{
+    font-family: 'Nunito', sans-serif;
+    opacity: 70%;
+
+}
+
+.footer-mid a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    opacity: 70%;
+}
+
+.footer-mid a:hover{
+    opacity: 100%;
+}
+
+.footer-mid li{
+    margin-bottom: 10px;
+}
+
+
+
+.footer-mid ul{
+    list-style: none;
+   
+    
+}
+
+.newsletter{
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.newsletter-button{
+    background-color: black;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    cursor: pointer;  
+}
+
+
+
+.copyright{
+    font-family: 'Nunito', sans-serif;
+    opacity: 70%;
+    text-align: center;
+    
+
+}
+
+/*FOOTER styling ends*/
+
+/*LOGIN PAGE BEGINS*/
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.login-main{
+    margin-top: -10vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-elements{
+    width: 400px;
+    height:45px;
+    padding: 0 10px ;
+    margin-top: 25px;
+    box-sizing: border-box;
+
+    
+   
+}
+
+.login-main h2{
+    text-align: center;
+    font-family:"Nunito",Arial, Helvetica, sans-serif;
+}
+
+.login-main p{
+    text-align: center;
+    font-family:"Nunito",Arial, Helvetica, sans-serif;
+    opacity: 65%;
+
+}
+
+.loginbutton{
+    background-color: black;
+    color: white;
+    font-family:"Roboto",Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.loginbutton:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;  
+}
+
+.new-account{
+    text-decoration: none;
+    color: black;
+    opacity: 65%;
+    margin-top: 10px;
+    font-family:"Nunito",Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+
+.new-account:hover{
+    opacity: 100%;
+
+}
+
+/*LOGIN PAGE ENDS*/
+
+/*SHOP PAGE BEGINS*/
+
+/*NOTE: This page uses some code from the "featured products" section of the LANDIING PAGE  */
+.shop-heading{
+    text-align: center;
+    font-family:"Nunito",Arial, Helvetica, sans-serif;
+    font-weight: normal;
+
+}
+
+.shop-hr{
+    margin-bottom: 50px;
+}
+
+.hover-cart-button{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    padding: 12px 30px;
+    font-weight: bold;
+    display: none;
+    opacity: 80%;
+
+    
+}
+
+.hover-cart-button:hover{
+    opacity: 100%;
+
+}
+
+
+
+.product-card:hover .hover-cart-button{
+    display: block;
+}
+
+.product-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sweatpants{
+    background-image: url("images/sweatpants\ 2.png");
+}
+
+.fanny-pack{
+    background-image: url("images/fanny\ pack\ 2.png");
+}
+
+.slides{
+    background-image: url("images/slides\ 2.png");
+}
+
+
+
